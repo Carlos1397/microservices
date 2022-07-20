@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: car-service
+  profiles:
+    active: default
+  jpa:
+    hibernate:
+      ddl-auto: update
+server :
+  port : 8002
