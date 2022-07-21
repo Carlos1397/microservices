@@ -11,6 +11,11 @@
         <module name="eureka-service" />
         <module name="car-service" />
         <module name="user-service" />
+      </profile>
+      <profile name="Annotation profile for config-service" enabled="true">
+        <sourceOutputDir name="../../config-service/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../config-service/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
         <module name="config-service" />
       </profile>
     </annotationProcessing>
