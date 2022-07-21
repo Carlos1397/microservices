@@ -42,11 +42,11 @@ public class UserService {
   }
 
   public List<Car> getCars(int userId){
-    List<Car> cars = restTemplate.getForObject("http://localhost:8002/cars/byUser/"+ userId,List.class);
+    List<Car> cars = restTemplate.getForObject("http://car-service/cars/byUser/"+ userId,List.class);
     return cars;
   }
   public List<Bike> getBikes(int userId){
-    List<Bike> bikeList = restTemplate.getForObject("http://localhost:8004/bikes/byUser/"+ userId,List.class);
+    List<Bike> bikeList = restTemplate.getForObject("http://bike-service:8004/bikes/byUser/"+ userId,List.class);
     return bikeList;
   }
   public Car saveCar(int userId,Car car){
