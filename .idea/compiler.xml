@@ -7,17 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bike-service" />
         <module name="eureka-service" />
+        <module name="bike-service" />
         <module name="car-service" />
         <module name="user-service" />
-        <module name="gateway-service" />
-      </profile>
-      <profile name="Annotation profile for config-service" enabled="true">
-        <sourceOutputDir name="../../config-service/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../config-service/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="config-service" />
+        <module name="gateway-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
